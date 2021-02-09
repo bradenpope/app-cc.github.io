@@ -17,7 +17,7 @@
 <div class="container" align="center">
   <h1>Kit Audit - APP-CC</h1>
     <div id="loadingMessage" hidden="">⌛ Loading video...</div>
-    <canvas id="canvas" height="250" width="300"></canvas>
+    <canvas id="canvas" max-height="250" max-width="300"></canvas>
 
     <div id="output">
       <div id="outputMessage">No QR code detected.</div>
@@ -71,7 +71,7 @@
           drawLine(code.location.topRightCorner, code.location.bottomRightCorner, "#FF3B58");
           drawLine(code.location.bottomRightCorner, code.location.bottomLeftCorner, "#FF3B58");
           drawLine(code.location.bottomLeftCorner, code.location.topLeftCorner, "#FF3B58");
-          outputMessage.hidden = false;
+          outputMessage.hidden = true;
           outputData.parentElement.hidden = false;
           outputData.innerText = code.data;
         } else {
