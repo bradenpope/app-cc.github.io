@@ -1,47 +1,39 @@
-html {
-  height: 100%;
-}
-
 body {
-  font-family: sans-serif;
-  padding: 0 10px;
-  height: 100%;
-  background: black;
-  margin: 0;
-}
+      font-family: 'Ropa Sans', sans-serif;
+      color: #333;
+      max-width: 640px;
+      margin: 0 auto;
+      position: relative;
+    }
 
-h1 {
-  color: black;
-  margin: 0;
-  padding: 15px;
-}
+    h1 {
+      margin: 10px 0;
+      font-size: 40px;
+    }
 
-#container {
-  text-align: center;
-  margin: 0;
-}
+    #loadingMessage {
+      text-align: center;
+      padding: 40px;
+      background-color: #eee;
+    }
 
-#qr-canvas {
-  margin: auto;
-  width: calc(100% - 20px);
-  max-width: 400px;
-}
+    #canvas {
+      width: 100%;
+    }
 
-#btn-scan-qr {
-  cursor: pointer;
-}
+    #output {
+      margin-top: 20px;
+      background: #eee;
+      padding: 10px;
+      padding-bottom: 0;
+    }
 
-#btn-scan-qr img {
-  height: 10em;
-  padding: 15px;
-  margin: 15px;
-  background: white;
-}
+    #output div {
+      padding-bottom: 10px;
+      word-wrap: break-word;
+    }
 
-#qr-result {
-  font-size: 1.2em;
-  margin: 20px auto;
-  padding: 20px;
-  max-width: 700px;
-  background-color: white;
-}
+    #noQRFound {
+      text-align: center;
+    }
+  
